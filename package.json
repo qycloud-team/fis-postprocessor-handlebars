@@ -1,0 +1,34 @@
+{
+    "name": "fis-postprocessor-handlebars",
+    "description": "A postprocessor plugin for fis to process handlebars files",
+    "version": "0.0.1",
+    "author": {
+        "name": "yufei",
+        "email": "googleyufei@qq.com"
+    },
+    "homepage": "http://www.oatos.com/",
+    "keywords": [
+        "fis",
+        "postprocessor",
+        "handlebars"
+    ],
+    "main": "index.js",
+    "dependencies": {
+        "handlebars": "1.3.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:qycloud-team/fis-postprocessor-handlebars.git"
+    },
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "test": "mocha test/ut --recursive"
+    },
+    "readme": "# fis-postprocessor-handlebars\n\nA postprocessor plugin for fis to wrap javascript with closure or amd define.\n\n\n\n## settings\n\n    $ vi path/to/project/fis-conf.js\n\n```javascript\nfis.config.merge({\n    settings : {\n        postprocessor : {\n            jswrapper : {\n                //wrap type. if omitted, it will wrap js file with '(function(){...})();'.\n                type : 'amd',\n                //you can use template also, ${content} means the file content\n                //template : '!function(){${content}}();',\n                //wrap all js file, default is false, wrap modular js file only.\n                wrapAll : true\n            }\n        }\n    }\n});\n```",
+    "readmeFilename": "README.md",
+    "bugs": {
+        "url": "https://github.com/qycloud-team/fis-postprocessor-handlebars/issues"
+    }
+}
